@@ -1,0 +1,39 @@
+<div class="container">
+    <!-- <div class="row">
+        <div class="col-md-12" style="text-align: center;margin-top: 40px;">
+            <h4>No Data</h4>
+            <br>
+            <a target="_parent" 
+            href="http://remoteinvoices.com/v3/invoice/getinvoice/invoiceform">
+               Add New Invoice
+            </a>
+        </div>        
+    </div> -->
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="chart-head">customer wise sale</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- <h3 class="chart-head">mothly product sale</h3> -->
+            <ngx-charts-advanced-pie-chart
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="single"
+                (select)="onSelect($event)"
+                >
+            </ngx-charts-advanced-pie-chart>
+            <ngx-charts-pie-grid
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="single"
+                (select)="onSelect($event)">
+            </ngx-charts-pie-grid>
+        </div>
+    </div>
+</div>
+
+
+
+

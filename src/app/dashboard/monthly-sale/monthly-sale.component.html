@@ -1,0 +1,46 @@
+<div class="container">
+    <div *ngIf="!single.length || !productSale.length" class="row">
+        <div class="col-md-12" style="text-align: center;margin-top: 40px;">
+            <h4>No Data</h4>
+            <br>
+            <a target="_parent" 
+            href="http://remoteinvoices.com/v3/invoice/getinvoice/invoiceform">
+               Add New Invoice
+            </a>
+        </div>        
+    </div>
+    <div class="row" *ngIf="single.length && productSale.length">
+        <div class="col-md-6">
+            <h3 class="chart-head">mothly overall sale</h3>
+            <br>
+            <ngx-charts-bar-vertical
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="single"
+                [gradient]="gradient"
+                [xAxis]="showXAxis"
+                [yAxis]="showYAxis"
+                [legend]="showLegend"
+                [showXAxisLabel]="showXAxisLabel"
+                [showYAxisLabel]="showYAxisLabel"
+                [xAxisLabel]="xAxisLabel"
+                [yAxisLabel]="yAxisLabel"
+                (select)="onSelect($event)">
+            </ngx-charts-bar-vertical>
+        </div>
+        <div class="col-md-6">
+            <h3 class="chart-head">mothly product sale</h3>
+            <br>
+            <ngx-charts-pie-chart
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="productSale"
+                [gradient]="gradient"
+                [labels]="true"
+                (select)="onSelect($event)">
+            </ngx-charts-pie-chart>
+        </div>
+    </div>
+</div>
+
+

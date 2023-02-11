@@ -1,0 +1,376 @@
+<div class="container">
+    <br>
+    <form [formGroup]="poForm" (ngSubmit)="onSubmit()">
+
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="poNo">PO.No</label>
+                <input 
+                    formControlName="poNo"
+                    class="form-control"
+                    [ngClass]="{'form-control': true,
+                        'is-invalid': formMessage.poNo != '',
+                        'is-valid': poForm.get('poNo').dirty && formMessage.poNo == ''}">
+                <div class="invalid-feedback">
+                    {{formMessage.poNo}}
+                </div>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="deliveryDate">Delivery Date</label>
+                <input type="text"
+                    autocomplete="off"
+                    formControlName="deliveryDate" 
+                    id="deliveryDate"
+                    class="form-control"
+                    bsDatepicker
+                    [ngClass]="{'form-control': true,
+                                'is-invalid': formMessage.deliveryDate != '',
+                                'is-valid': poForm.get('deliveryDate').dirty && formMessage.deliveryDate == ''}">
+                <div class="invalid-feedback">
+                    {{formMessage.deliveryDate}}
+                </div>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="requestedBy">Requested By</label>
+                <input type="text"
+                    formControlName="requestedBy"
+                    id="requestedBy"
+                    name="requestedBy"
+                    class="form-control"
+                    [ngClass]="{'form-control': true,
+                                'is-invalid': formMessage.requestedBy != '',
+                                'is-valid': poForm.get('requestedBy').dirty && formMessage.requestedBy == ''}">
+                <div class="invalid-feedback">
+                    {{formMessage.requestedBy}}
+                </div>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="approvedBy">Approved By</label>
+                <input type="text"
+                    formControlName="approvedBy"
+                    id="approvedBy"
+                    name="approvedBy"
+                    class="form-control"
+                    [ngClass]="{'form-control': true,
+                                'is-invalid': formMessage.approvedBy != '',
+                                'is-valid': poForm.get('approvedBy').dirty && formMessage.approvedBy == ''}">
+                <div class="invalid-feedback">
+                    {{formMessage.approvedBy}}
+                </div>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="department">Department</label>
+                <input type="text"
+                    formControlName="department"
+                    id="department"
+                    name="department"
+                    class="form-control">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="venNm">Vendor Name</label>
+                        <input 
+                            formControlName="venNm"
+                            [typeahead]="vendors"
+                            typeaheadOptionField="venNm"
+                            (typeaheadOnSelect)="onVendorSelect($event)"
+                            [isAnimated]="true"
+                            (typeaheadNoResults)="clearVendorDetails()"
+                            class="form-control"
+                            [ngClass]="{'form-control': true,
+                                'is-invalid': formMessage.venNm != '',
+                                'is-valid': poForm.get('venNm').dirty && formMessage.venNm == ''}">
+                        <div class="invalid-feedback">
+                            {{formMessage.venNm}}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="vendorDetails">Vendor Details</label>
+                        <textarea
+                            formControlName="vendorDetails" 
+                            disabled="true"
+                            class="form-control" 
+                            rows="5" 
+                            id="vendoerDetails"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ng-template #addnewaddress>
+                    <div class="modal-header">
+                        <b>Add new address.</b>
+                        <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <app-add-address
+                            (onFormSubmit)="onAddressAdd($event)"></app-add-address>
+                    </div>                    
+                </ng-template>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="deliveryAddress">Delivery Address</label>&nbsp;&nbsp;
+                        <a (click)="$event.preventDefault(); openFormModel(addnewaddress)" href="#" tooltip="Add new address.">
+                            <i class="fa fa-plus" aria-hidden="true"></i></a>
+                        <input 
+                            formControlName="deliveryAddress"
+                            [typeahead]="addressList"
+                            typeaheadOptionField="addressDet"
+                            (typeaheadOnSelect)="onAddressSelect($event)"
+                            [isAnimated]="true"
+                            (typeaheadNoResults)="clearAddressDetails()"
+                            class="form-control"
+                            [ngClass]="{'form-control': true,
+                                'is-invalid': formMessage.deliveryAddress != '',
+                                'is-valid': poForm.get('deliveryAddress').dirty && formMessage.deliveryAddress == ''}">                        
+                        <div class="invalid-feedback">
+                            {{formMessage.deliveryAddress}}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="deliveryAddressDetails">Delivery Address Details</label>
+                        <textarea
+                            formControlName="deliveryAddressDetails" 
+                            class="form-control" 
+                            rows="5" 
+                            id="deliveryAddressDetails"
+                            disabled="true"
+                            [ngClass]="{'form-control': true,
+                                'is-invalid': formMessage.deliveryAddressDetails != '',
+                                'is-valid': poForm.get('deliveryAddressDetails').dirty && formMessage.deliveryAddressDetails == ''}"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="for-group col-md-12 table-responsive" formArrayName="products">   
+                <ng-template #addnewproduct>
+                    <div class="modal-header">
+                        <b>Add new product.</b>
+                        <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <app-add-product (onFormSubmit)="onProductAdd($event)"></app-add-product>
+                    </div>                    
+                </ng-template>
+                <table class="table table-sm table-borderless">
+                    <thead>
+                        <tr>
+                            <th>S/N</th>
+                            <th>Product Details</th>
+                            <th>HSN Code</th>
+                            <th>GST</th>
+                            <th>QTY</th>
+                            <th>Rate</th>
+                            <th>Total</th>
+                            <th>Total with GST</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let product of this.poForm.get('products')['controls']; let i = index" [formGroupName]="i"  >  
+                            <td>{{i+1}}</td>
+                            <td>
+                                <span style="width: 90%; display: inline-block;">
+                                    <textarea
+                                        class="form-control"
+                                        rows="1"
+                                        cols="50"
+                                        formControlName="proDesc"
+                                        [typeahead]="products"
+                                        typeaheadOptionField="proDesc"
+                                        (typeaheadOnSelect)="onProductSelect($event, i)"
+                                        [isAnimated]="true"
+                                        (typeaheadNoResults)="clearProductDetails(i)"
+                                        (blur)="logValidationErrors()"
+                                        [id]="'proDesc'+i"
+                                        [ngClass]="{'form-control': true,
+                                            'is-invalid': poForm.controls.products['controls'][i].get('proDesc').dirty && 
+                                                        poForm.controls.products['controls'][i].get('proDesc').invalid ,
+                                            'is-valid': poForm.controls.products['controls'][i].get('proDesc').dirty
+                                                        && formMessage.proDesc == ''}">
+                                    </textarea>
+                                </span>
+                                <span style="width: 10%;vertical-align: top;padding-left: 5px;">
+                                    <a (click)="$event.preventDefault(); openFormModel(addnewproduct, i)"
+                                        href="#"
+                                        tooltip="Add new product.">
+                                            <i class="fa fa-plus" aria-hidden="true"></i></a>
+                                </span>                                
+                                <div class="invalid-feedback">
+                                    {{formMessage.proDesc}}
+                                </div>
+                            </td>
+                            <td>
+                                <input type="text"
+                                    class="form-control"
+                                    disabled="true"
+                                    formControlName="proHsn"
+                                    (blur)="logValidationErrors()"
+                                    [id]="'proHsn'+i"
+                                    [ngClass]="{'form-control': true,
+                                        'is-invalid': poForm.controls.products['controls'][i].get('proHsn').dirty && 
+                                                      poForm.controls.products['controls'][i].get('proHsn').invalid ,
+                                        'is-valid': poForm.controls.products['controls'][i].get('proHsn').dirty
+                                                    && formMessage.proHsn == ''}">
+                                <div class="invalid-feedback">
+                                    {{formMessage.proHsn}}
+                                </div>
+                            </td>
+                            <td>
+                                <input type="number"
+                                    class="form-control"
+                                    formControlName="proGst"
+                                    (blur)="logValidationErrors(); setTotalAmount(i);"
+                                    (keyup)="setTotalAmount(i);"
+                                    (change)="setTotalAmount(i);"
+                                    [id]="'proGst'+i"
+                                    [ngClass]="{'form-control': true,
+                                        'is-invalid': poForm.controls.products['controls'][i].get('proGst').dirty && 
+                                                      poForm.controls.products['controls'][i].get('proGst').invalid ,
+                                        'is-valid': poForm.controls.products['controls'][i].get('proGst').dirty
+                                                    && formMessage.proGst == ''}">
+                                    <div class="invalid-feedback">
+                                        {{formMessage.proGst}}
+                                    </div>
+                            </td>
+                            <td>
+                                <input type="number"
+                                    class="form-control"
+                                    formControlName="proQty"
+                                    (blur)="logValidationErrors();setTotalAmount(i);"
+                                    (keyup)="setTotalAmount(i);"
+                                    (change)="setTotalAmount(i);"
+                                    [id]="'proQty'+i"
+                                    [ngClass]="{'form-control': true,
+                                        'is-invalid': poForm.controls.products['controls'][i].get('proQty').dirty && 
+                                                      poForm.controls.products['controls'][i].get('proQty').invalid ,
+                                        'is-valid': poForm.controls.products['controls'][i].get('proQty').dirty
+                                                    && formMessage.proQty == ''}">
+                                    <div class="invalid-feedback">
+                                        {{formMessage.proQty}}
+                                    </div>
+                            </td>
+                            <td>
+                                <input type="number"
+                                    class="form-control"
+                                    formControlName="proRate"
+                                    (blur)="logValidationErrors();setTotalAmount(i);"
+                                    (keyup)="setTotalAmount(i);"
+                                    (change)="setTotalAmount(i);"
+                                    [id]="'proRate'+i"
+                                    [ngClass]="{'form-control': true,
+                                    'is-invalid': poForm.controls.products['controls'][i].get('proRate').dirty && 
+                                                  poForm.controls.products['controls'][i].get('proRate').invalid ,
+                                    'is-valid': poForm.controls.products['controls'][i].get('proRate').dirty
+                                                && formMessage.proRate == ''}">
+                                <div class="invalid-feedback">
+                                    {{formMessage.proRate}}
+                                </div>
+                            </td>
+                            <td>
+                                <input type="number"
+                                    class="form-control"
+                                    formControlName="total"
+                                    disabled="true"
+                                    (blur)="logValidationErrors()"
+                                    [id]="'total'+i"
+                                    [ngClass]="{'form-control': true,
+                                    'is-invalid': poForm.controls.products['controls'][i].get('total').dirty && 
+                                                  poForm.controls.products['controls'][i].get('total').invalid ,
+                                    'is-valid': poForm.controls.products['controls'][i].get('total').dirty
+                                                && formMessage.total == ''}">
+                                <div class="invalid-feedback">
+                                    {{formMessage.total}}
+                                </div>
+                            </td>
+                            <td>
+                                <input type="number"
+                                    class="form-control"
+                                    formControlName="totalGST"
+                                    (blur)="logValidationErrors()"
+                                    disabled="true"
+                                    [id]="'totalGST'+i"
+                                    [ngClass]="{'form-control': true,
+                                    'is-invalid': poForm.controls.products['controls'][i].get('totalGST').dirty && 
+                                                  poForm.controls.products['controls'][i].get('totalGST').invalid ,
+                                    'is-valid': poForm.controls.products['controls'][i].get('totalGST').dirty
+                                                && formMessage.totalGST == ''}">
+                                <div class="invalid-feedback">
+                                    {{formMessage.totalGST}}
+                                </div>
+                            </td>
+                            <td>
+                                <button
+                                    style="color: red; font-weight: bolder;"
+                                    *ngIf="poForm.get('products')['controls'].length > 1" 
+                                    class="btn btn-link" 
+                                    (click)="onRemoveProduct(i)">
+                                        -
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="9">
+                                <h5 class="float-right">Grand Total: {{grandTotal}}</h5>
+                            </td>
+                        </tr>
+                    </tbody>                    
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div *ngIf="formMessage.insertError != ''">
+                    <alert 
+                        [type]="'danger'" 
+                        [dismissible]="false">
+                        {{ formMessage.insertError }}
+                    </alert>
+                </div>
+                
+                <div *ngIf="formMessage.successMessage != ''">
+                    <alert 
+                        [type]="'success'" 
+                        [dismissible]="false">
+                        {{ formMessage.successMessage }}
+                    </alert>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <button
+                            [disabled]="poForm.get('products').invalid" 
+                            class="btn btn-link float-right"
+                            type="button" 
+                            (click)="onAddProduct()">
+                                Add product</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button
+                    [disabled]="poForm.invalid" 
+                    class="btn btn-primary float-right"
+                    type="submit">
+                        Submit </button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </form>    
+  </div>
+
