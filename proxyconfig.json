@@ -1,0 +1,12 @@
+{
+    "/api": {
+      "target": "http://localhost:4300",
+      "secure": false,
+      "changeOrigin": true
+    },
+    "/v4/api/": {
+      "target": "http://localhost/",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }

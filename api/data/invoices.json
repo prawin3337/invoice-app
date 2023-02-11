@@ -1,0 +1,1022 @@
+[
+  {
+    "invo_id": "813",
+    "invo_date": "2020-01-03 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-01-03 13:34:00",
+    "cust_id": "111",
+    "shipping_address_id": "111",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-01-03 00:00:00",
+    "material_supply_place": "PUNE",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/459",
+    "purchase_order_code": "1510054922",
+    "purchase_order_date": "2019-12-24 00:00:00",
+    "products": [
+      {
+        "invo_id": "813",
+        "pro_id": "1",
+        "pro_det": "RS232 TO RS485 (NON ISOLATED) CONVERTER. PE-03",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "30.00",
+        "pro_rate": "350.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "814",
+    "invo_date": "2020-01-04 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-01-07 15:56:00",
+    "cust_id": "69",
+    "shipping_address_id": "69",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-01-04 00:00:00",
+    "material_supply_place": "PUNE,MAHARASHTRA",
+    "material_transport_mode": "BY HAND",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/460",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-01-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "814",
+        "pro_id": "1",
+        "pro_det": "RS232 TO RS485 ISOLATED CONVERTER, 12V TO 24V DC",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "1.00",
+        "pro_rate": "1600.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "814",
+        "pro_id": "2",
+        "pro_det": "USB TO RS485 CONVERTER (NON-ISOLATED)",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "1.00",
+        "pro_rate": "460.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "815",
+    "invo_date": "2020-01-07 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-01-07 15:59:00",
+    "cust_id": "69",
+    "shipping_address_id": "69",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-01-07 00:00:00",
+    "material_supply_place": "PUNE,MAHARASHTRA",
+    "material_transport_mode": "BY HAND",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/461",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-01-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "815",
+        "pro_id": "1",
+        "pro_det": "USB TO  RS232/RS485 CONVERTER (ISOLATED), PCON U-01",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "15.00",
+        "pro_rate": "1100.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "816",
+    "invo_date": "2020-01-16 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-01-16 16:55:00",
+    "cust_id": "93",
+    "shipping_address_id": "93",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "1",
+    "material_supply_date": "2020-01-16 00:00:00",
+    "material_supply_place": "VADODARA,GUJARAT",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/462",
+    "purchase_order_code": "POD/RIMAS/010020",
+    "purchase_order_date": "2020-01-03 00:00:00",
+    "products": [
+      {
+        "invo_id": "816",
+        "pro_id": "1",
+        "pro_det": "USB TO  RS232/RS485 CONVERTER (ISOLATED), ACON U-01",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "5.00",
+        "pro_rate": "1550.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "817",
+    "invo_date": "2020-01-25 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-01-25 14:32:00",
+    "cust_id": "246",
+    "shipping_address_id": "247",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "1",
+    "material_supply_date": "2020-01-25 00:00:00",
+    "material_supply_place": "BENGALURU,KARNATAKA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/463",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-01-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "817",
+        "pro_id": "1",
+        "pro_det": "RS232 TO RS485 ISOLATED CONVERTER,  24V DC\r\nPCON E-02",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "4.00",
+        "pro_rate": "1450.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "817",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "200.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "818",
+    "invo_date": "2020-02-01 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-01 15:24:00",
+    "cust_id": "111",
+    "shipping_address_id": "111",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-02-01 00:00:00",
+    "material_supply_place": "PUNE,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/464",
+    "purchase_order_code": "1510055875",
+    "purchase_order_date": "2020-01-23 00:00:00",
+    "products": [
+      {
+        "invo_id": "818",
+        "pro_id": "1",
+        "pro_det": "RS232 TO RS485 (NON ISOLATED) CONVERTER.\r\nPE-03",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "30.00",
+        "pro_rate": "350.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "819",
+    "invo_date": "2020-02-01 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-01 15:50:00",
+    "cust_id": "133",
+    "shipping_address_id": "233",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-02-01 00:00:00",
+    "material_supply_place": "MUMBAI,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/466",
+    "purchase_order_code": "SE/MHN03/STOCK/PE/2020-21/02741",
+    "purchase_order_date": "2020-01-28 00:00:00",
+    "products": [
+      {
+        "invo_id": "819",
+        "pro_id": "1",
+        "pro_det": "DATA LOGGER PCB CIRCUIT BOARD",
+        "pro_gst": "18.00",
+        "pro_hsn": "85423900",
+        "pro_qty": "10.00",
+        "pro_rate": "3000.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "819",
+        "pro_id": "2",
+        "pro_det": "4G GSM BOARD",
+        "pro_gst": "18.00",
+        "pro_hsn": "85423900",
+        "pro_qty": "10.00",
+        "pro_rate": "2000.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "819",
+        "pro_id": "3",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "150.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "820",
+    "invo_date": "2020-02-01 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-01 16:12:00",
+    "cust_id": "111",
+    "shipping_address_id": "111",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-02-01 00:00:00",
+    "material_supply_place": "PUNE,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/465",
+    "purchase_order_code": "CHALLAN  NO- MH1914302326",
+    "purchase_order_date": "2020-01-22 00:00:00",
+    "products": [
+      {
+        "invo_id": "820",
+        "pro_id": "1",
+        "pro_det": "RS232 TO RS485 (NON ISOLATED) CONVERTER.\r\n(PE -03) ,REPAIR AND TESTING",
+        "pro_gst": "18.00",
+        "pro_hsn": "998898",
+        "pro_qty": "7.00",
+        "pro_rate": "50.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "821",
+    "invo_date": "2020-02-01 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-01 17:46:00",
+    "cust_id": "92",
+    "shipping_address_id": "286",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "1",
+    "material_supply_date": "2020-02-01 00:00:00",
+    "material_supply_place": "AHEMADABAD,GUJARAT",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/467",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-02-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "821",
+        "pro_id": "1",
+        "pro_det": "SMART SOLAR CHARGE CONTROLLER",
+        "pro_gst": "5.00",
+        "pro_hsn": "8543",
+        "pro_qty": "20.00",
+        "pro_rate": "360.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "821",
+        "pro_id": "2",
+        "pro_det": "SMART SOLAR CHARGE CONTROLLER (SAMPLE)",
+        "pro_gst": "5.00",
+        "pro_hsn": "8543",
+        "pro_qty": "7.00",
+        "pro_rate": "360.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "822",
+    "invo_date": "2020-02-04 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-04 17:45:00",
+    "cust_id": "133",
+    "shipping_address_id": "133",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-02-04 00:00:00",
+    "material_supply_place": "MUMBAI,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/468",
+    "purchase_order_code": "SE/MHN03/CVALV/PE/2020-21/02763",
+    "purchase_order_date": "2020-02-03 00:00:00",
+    "products": [
+      {
+        "invo_id": "822",
+        "pro_id": "1",
+        "pro_det": "4G GSM MODULE",
+        "pro_gst": "18.00",
+        "pro_hsn": "85423900",
+        "pro_qty": "20.00",
+        "pro_rate": "2000.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "822",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "100.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "823",
+    "invo_date": "2020-02-06 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-06 15:06:00",
+    "cust_id": "246",
+    "shipping_address_id": "247",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "1",
+    "material_supply_date": "2020-02-06 00:00:00",
+    "material_supply_place": "BENGALURU ,KARNATAKA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/469",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-02-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "823",
+        "pro_id": "1",
+        "pro_det": "RS232 TO RS485 ISOLATED CONVERTER, 24V DC\r\nPCON E-02",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "5.00",
+        "pro_rate": "1450.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "823",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "300.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "824",
+    "invo_date": "2020-02-08 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-08 15:15:00",
+    "cust_id": "86",
+    "shipping_address_id": "86",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-02-08 00:00:00",
+    "material_supply_place": "MUMBAI,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/470",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-02-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "824",
+        "pro_id": "1",
+        "pro_det": "USB TO RS 232 NON ISOLATED CONVERTER",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "50.00",
+        "pro_rate": "300.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "824",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "100.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "825",
+    "invo_date": "2020-02-08 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-08 17:11:00",
+    "cust_id": "92",
+    "shipping_address_id": "286",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "1",
+    "material_supply_date": "2020-02-08 00:00:00",
+    "material_supply_place": "AHEMADABAD,GUJARAT",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/471",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-02-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "825",
+        "pro_id": "1",
+        "pro_det": "SOLAR CHARGE CONTROLLER WITH DIMMING",
+        "pro_gst": "5.00",
+        "pro_hsn": "8543",
+        "pro_qty": "12.00",
+        "pro_rate": "360.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "826",
+    "invo_date": "2020-02-12 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-12 14:42:00",
+    "cust_id": "241",
+    "shipping_address_id": "295",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-02-12 00:00:00",
+    "material_supply_place": "PHALTAN",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/472",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-02-12 00:00:00",
+    "products": [
+      {
+        "invo_id": "826",
+        "pro_id": "1",
+        "pro_det": "USB TO  RS232/RS485 CONVERTER (ISOLATED), PCON U-01",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "1.00",
+        "pro_rate": "1750.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "827",
+    "invo_date": "2020-02-18 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-18 15:19:00",
+    "cust_id": "49",
+    "shipping_address_id": "49",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "1",
+    "material_supply_date": "2020-02-18 00:00:00",
+    "material_supply_place": "TELANGANA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/473",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-02-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "827",
+        "pro_id": "1",
+        "pro_det": "RS232 TO RS485 ISOLATED CONVERTER, 24V DC\r\nACON E-02",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "3.00",
+        "pro_rate": "1650.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "827",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "200.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "828",
+    "invo_date": "2020-02-18 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-18 15:33:00",
+    "cust_id": "296",
+    "shipping_address_id": "296",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "1",
+    "material_supply_date": "2020-02-18 00:00:00",
+    "material_supply_place": "PUNJAB",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/474",
+    "purchase_order_code": "AML/PUN/PO/2020/184",
+    "purchase_order_date": "2020-02-15 00:00:00",
+    "products": [
+      {
+        "invo_id": "828",
+        "pro_id": "1",
+        "pro_det": "USB TO  RS232/RS485 CONVERTER (ISOLATED), PCON U-01",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "3.00",
+        "pro_rate": "1700.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "828",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "200.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "829",
+    "invo_date": "2020-02-19 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-19 15:29:00",
+    "cust_id": "92",
+    "shipping_address_id": "286",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "1",
+    "material_supply_date": "2020-02-19 00:00:00",
+    "material_supply_place": "GUJARAT",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/475",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-02-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "829",
+        "pro_id": "1",
+        "pro_det": "SOLAR CHARGE CONTROLLER WITH DIMMING",
+        "pro_gst": "5.00",
+        "pro_hsn": "8543",
+        "pro_qty": "8.00",
+        "pro_rate": "360.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "830",
+    "invo_date": "2020-02-21 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-21 16:51:00",
+    "cust_id": "133",
+    "shipping_address_id": "233",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-02-21 00:00:00",
+    "material_supply_place": "MUMBAI,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/476",
+    "purchase_order_code": "SE/MHN03/BANSJ/PE/2020-21/02824",
+    "purchase_order_date": "2020-02-15 00:00:00",
+    "products": [
+      {
+        "invo_id": "830",
+        "pro_id": "1",
+        "pro_det": "SOLAR CHARGE RS 485 CABLES,LENGTH -150MM",
+        "pro_gst": "18.00",
+        "pro_hsn": "8544",
+        "pro_qty": "3500.00",
+        "pro_rate": "4.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "830",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "300.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "831",
+    "invo_date": "2020-02-24 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-24 18:36:00",
+    "cust_id": "297",
+    "shipping_address_id": "297",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-02-24 00:00:00",
+    "material_supply_place": "MUMBAI,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/477",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-02-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "831",
+        "pro_id": "1",
+        "pro_det": "PLASTIC ENCLOSURE BOX (ABS)",
+        "pro_gst": "18.00",
+        "pro_hsn": "85381010",
+        "pro_qty": "2.00",
+        "pro_rate": "400.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "831",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "127.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "832",
+    "invo_date": "2020-02-25 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-25 17:56:00",
+    "cust_id": "133",
+    "shipping_address_id": "233",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-02-25 00:00:00",
+    "material_supply_place": "MUMBAI,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/478",
+    "purchase_order_code": "SE/MHN03/CVALV/PE/2020-21/02799",
+    "purchase_order_date": "2020-02-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "832",
+        "pro_id": "1",
+        "pro_det": "SMART SOLAR CHARGE CONTROLLER",
+        "pro_gst": "5.00",
+        "pro_hsn": "8543",
+        "pro_qty": "160.00",
+        "pro_rate": "390.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "832",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "650.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "833",
+    "invo_date": "2020-02-27 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-27 10:23:00",
+    "cust_id": "298",
+    "shipping_address_id": "298",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-02-27 00:00:00",
+    "material_supply_place": "PUNE,MAHARASHTRA",
+    "material_transport_mode": "BY HAND",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/479",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-02-01 00:00:00",
+    "products": [
+      {
+        "invo_id": "833",
+        "pro_id": "1",
+        "pro_det": "USB TO  RS232/RS485 CONVERTER (ISOLATED), PCON U-01",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "5.00",
+        "pro_rate": "1200.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "834",
+    "invo_date": "2020-02-27 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-02-27 17:21:00",
+    "cust_id": "133",
+    "shipping_address_id": "233",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-02-27 00:00:00",
+    "material_supply_place": "MUMBAI,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/480",
+    "purchase_order_code": "SE/MHN03/CVALV/PE/2020-21/02799",
+    "purchase_order_date": "2020-02-11 00:00:00",
+    "products": [
+      {
+        "invo_id": "834",
+        "pro_id": "1",
+        "pro_det": "SMART SOLAR CHARGE CONTROLLER",
+        "pro_gst": "5.00",
+        "pro_hsn": "8543",
+        "pro_qty": "200.00",
+        "pro_rate": "390.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "834",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "900.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "835",
+    "invo_date": "2020-03-04 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-03-04 14:57:00",
+    "cust_id": "92",
+    "shipping_address_id": "286",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "1",
+    "material_supply_date": "2020-03-04 00:00:00",
+    "material_supply_place": "GUJARAT",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/481",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-03-04 00:00:00",
+    "products": [
+      {
+        "invo_id": "835",
+        "pro_id": "1",
+        "pro_det": "SOLAR CHARGE COMBO MODULE",
+        "pro_gst": "5.00",
+        "pro_hsn": "8543",
+        "pro_qty": "20.00",
+        "pro_rate": "360.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "836",
+    "invo_date": "2020-03-04 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-03-04 14:59:00",
+    "cust_id": "230",
+    "shipping_address_id": "230",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-03-04 00:00:00",
+    "material_supply_place": "PUNE",
+    "material_transport_mode": "BY HAND",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/482",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-03-04 00:00:00",
+    "products": [
+      {
+        "invo_id": "836",
+        "pro_id": "1",
+        "pro_det": "SMALL SOLAR CHARGE CONTROLLER",
+        "pro_gst": "5.00",
+        "pro_hsn": "8543",
+        "pro_qty": "42.00",
+        "pro_rate": "360.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "837",
+    "invo_date": "2020-03-04 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-03-04 17:22:00",
+    "cust_id": "133",
+    "shipping_address_id": "233",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-03-04 00:00:00",
+    "material_supply_place": "MUMBAI,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/483",
+    "purchase_order_code": "SE/MHN03/CVALV/PE/2020-21/02799",
+    "purchase_order_date": "2020-02-11 00:00:00",
+    "products": [
+      {
+        "invo_id": "837",
+        "pro_id": "1",
+        "pro_det": "SMART SOLAR CHARGE CONTROLLER",
+        "pro_gst": "5.00",
+        "pro_hsn": "8543",
+        "pro_qty": "200.00",
+        "pro_rate": "390.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "837",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "800.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "838",
+    "invo_date": "2020-03-05 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-03-05 14:33:00",
+    "cust_id": "133",
+    "shipping_address_id": "233",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-03-05 00:00:00",
+    "material_supply_place": "MUMBAI,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/484",
+    "purchase_order_code": "SE/MHN03/CVALV/PE/2020-21/02799",
+    "purchase_order_date": "2020-02-11 00:00:00",
+    "products": [
+      {
+        "invo_id": "838",
+        "pro_id": "1",
+        "pro_det": "SMART SOLAR CHARGE CONTROLLER",
+        "pro_gst": "5.00",
+        "pro_hsn": "8543",
+        "pro_qty": "200.00",
+        "pro_rate": "390.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "838",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "800.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "840",
+    "invo_date": "2020-03-07 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-03-07 15:11:00",
+    "cust_id": "300",
+    "shipping_address_id": "300",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-03-07 00:00:00",
+    "material_supply_place": "PUNE",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/485",
+    "purchase_order_code": "NA",
+    "purchase_order_date": "2020-03-07 00:00:00",
+    "products": [
+      {
+        "invo_id": "840",
+        "pro_id": "1",
+        "pro_det": "USB TO  RS232/RS485 CONVERTER (ISOLATED), PCON U-01",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "2.00",
+        "pro_rate": "1600.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "840",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "50.00",
+        "com_id": "3"
+      }
+    ]
+  },
+  {
+    "invo_id": "841",
+    "invo_date": "2020-03-09 00:00:00",
+    "bill_amt": "0.00",
+    "sys_date": "2020-03-09 13:23:00",
+    "cust_id": "222",
+    "shipping_address_id": "222",
+    "login_id": "201601",
+    "com_id": "3",
+    "invoice_type": "0",
+    "material_supply_date": "2020-03-09 00:00:00",
+    "material_supply_place": "PUNE,MAHARASHTRA",
+    "material_transport_mode": "BY COURIER",
+    "material_transport_details": "NA",
+    "invoice_code": "PRA/2019-20/486",
+    "purchase_order_code": "ER/19-20/095",
+    "purchase_order_date": "2020-03-09 00:00:00",
+    "products": [
+      {
+        "invo_id": "841",
+        "pro_id": "1",
+        "pro_det": "USB TO  RS232/RS485 CONVERTER (ISOLATED), PCON U-01",
+        "pro_gst": "18.00",
+        "pro_hsn": "8471",
+        "pro_qty": "2.00",
+        "pro_rate": "1800.00",
+        "com_id": "3"
+      },
+      {
+        "invo_id": "841",
+        "pro_id": "2",
+        "pro_det": "FREIGHT",
+        "pro_gst": "18.00",
+        "pro_hsn": "996812",
+        "pro_qty": "1.00",
+        "pro_rate": "100.00",
+        "com_id": "3"
+      }
+    ]
+  }
+]
